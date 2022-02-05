@@ -1,0 +1,11 @@
+#add_more_option, .remove_option, #add_more_option_matching, .remove_option_matching {
+    margin-top: 10px; 
+    margin-left: 10px; 
+    padding:2px 5px; 
+    cursor: pointer; 
+    border: 1px solid lightgrey;
+}
+
+.remove_option, .remove_option_matching {
+    padding:2px 6px;
+}
