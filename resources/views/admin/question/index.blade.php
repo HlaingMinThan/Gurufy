@@ -38,7 +38,7 @@
                             <?php foreach ($items as $key => $value): ?>
                                 <tr>
                                     <!-- <td>{{$key+1}}</td> -->
-                                    <td>{{$value->serial}}</td>
+                                    <td>{{ $items->firstItem() + $key }}</td>
                                     <td>{!! $value->title !!}</td>
                                     <td>{{ $value->topic->chapter->subject->standard->name }}</td>
                                     <td>{{ $value->topic->chapter->subject->name }}</td>
