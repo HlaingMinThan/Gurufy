@@ -21,7 +21,6 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
         if (Auth::guard('admin')->attempt(['username' => $request->username, 'password' => $request->password], $request->remember)) {
-            dd('hit login');
             return redirect()->intended(route('admin-dashboard'));
         }
         return redirect()->back()->withInput()->with('error_message', 'Wrong credentials');
